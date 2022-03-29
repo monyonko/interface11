@@ -1,0 +1,45 @@
+.begin{
+    height:20vh;
+    width: inherit;
+    display:flex;
+    margin: 0;
+    font-size: 2.5vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logo{
+    flex:0.1;
+    height: inherit;
+}
+.middle{
+    flex:1;
+    height: 20vh;
+    display:flex;
+    flex-direction: column;
+    margin-left: 2vh;
+    
+}
+.middle .searchbar{
+    margin-top: 0;
+    flex-basis: auto;   
+}
+.middle .searchbar input{
+    width:70vw;
+    height:5vh;
+    border-radius: 0.5vh;
+}
+.middle .navbar{
+    flex-basis: auto;
+}
+.middle .navbar a{
+    margin-right: 1vh;
+    text-transform: uppercase;
+}
+.icons{
+    flex:0.25;
+}
+.icons a{
+    float: right;
+    margin: 2vh;
+}
+
+

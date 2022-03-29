@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Condensed&display=swap');
+
+*{
+    margin:auto;
+    padding:auto;
+    box-sizing:border-box;
+    max-width: 100vw;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    margin-left: 2vh;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+width:100vw;
+height:auto;
+overflow-x: hidden;
+}
+.container{
+    margin:1vh 0 0 1vh;
+    overflow: hidden;
+}
+.zoom{
+    transition: all .2s ease-in-out;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+    margin-top: -5vh; 
+}
+
+.slideshow{
+    height: 40vh;
+    display:flex;
+    width:100vw;
+    background-color: rgb(124, 121, 121);
+    padding-left: 1vh;
+    padding-right: 1vh;
+    justify-items: center;
+}
+.slider1{
+    position: relative;
+    min-width: 20%;
+    height:30vh;
+    padding: 1vh; 
+    text-align: center;
+    border-right: 0.1vh solid black;    
+}
+.slider1 img{
+    height: 28vh;
+    width:inherit;
+}
+.slider1 .details{
+    width:inherit;
+    position: absolute;
+    top:60vh;
+    left: auto;
+    right: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top:40%;
+    margin-top: -22px;
+    padding: 0.1vh;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 3px 0 0 3px;
+} 
+/* Position the "next button" to the right */
+.next {right: 0.1vh;}
+.prev {left: 1vh;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+} 
+.float{
+    position:fixed;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    width:15vw;
+    height:15vw;
+    right:0;
+    top:-12vh;
+}
+.float .item{
+    border-radius: 50%;
+    width:3vw;
+    height:3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+.float a{
+    text-decoration: none;
+    color: black;
+}
+.four{
+    margin: 0 1vh 1vh 1vh;
+}
+
+.encloseFour, .fiction{
+    display: inline-flex;
+    height: 30vh; 
+    overflow: hidden; 
+    margin-top: 1vh; 
+    text-align: center; 
+}
+.encloseFour .highlyRated, .fiction .fictionBook{
+    width:10vw;
+    height: inherit;
+    margin:0 2vh 2vh 1vh;
+    text-align: center;  
+   
+}
+.encloseFour .highlyRated img, .fiction .fictionBook img{
+    width:8vw;
+    height: 22vh;
+    border:0.1vh solid black;
+    margin-top: 2vh;
+    overflow: hidden;   
+}
+.afterFour{
+    height: 35vh;
+    width:inherit;
+    text-align: center;
+    display: relative;
+}
+.afterFour img{
+    width:15vw;
+    height:25vh;
+}
+.bookOfTheMonthDescription{
+    position: absolute;
+    top:125vh;
+    background-color: #bbb;
+    display: none;
+}
+
+.afterFour a:hover .bookOfTheMonthDescription {
+    display: block;
+}
+
+.encloseFiction{
+    background-image: url(../img/fiction.PNG);
+    background-size: cover;
+}
+.fiction img{
+    background: #fff;
+}
+.selfHelp{
+    display: flex;
+    height: 50vh;
+    margin-bottom: 1vh;
+    border-bottom: 0.1vh dotted black;
+    overflow: hidden;
+}
+.anchor{
+    flex:0.4;
+    margin: 1vh;
+}
+.anchor img{
+    width: 25vw;
+    height:40vh;
+    padding: 1vh;   
+}
+.side{
+    flex:1;
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+.side .fictionBook{
+    width:10vw;
+    height: 22vh;
+    overflow: hidden;   
+}
+.side .fictionBook img{
+    width:10vw;
+    height: 15vh;
+}
+.journals{
+    display:flex;
+    height:40vh;
+    width:inherit;
+    margin-bottom: 2vh;
+    border-bottom: 0.1vh dotted black;
+}
+.journals>div{
+    flex:auto;
+    margin: 1vh;
+}
+.journals img{
+    width: 15vw;
+    height:30vh;
+}
+.curriculumBooks{
+    height:60vh;
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.curriculumBooks .curriculum{
+    flex: auto;
+    min-width: 15vw;
+    height: 20vh;
+    background: grey;
+    margin: 1vh;
+    
+}
+.otherAccessories{
+    border: 0.1 solid black;
+    height: 20vh;
+    width: inherit;
+    background-color: black;
+    overflow: hidden;
+
+}
+.otherAccessories .accessorize{
+    width:inherit;
+    height:inherit;
+    display: flex;
+    
+}
+.accessorize img{
+    flex:auto;
+    max-width:9vw;
+    height:20vh;
+    margin: 0;
+}
+.five{
+    display:flex;
+    height:30vh;
+}
+.five>div {
+    flex:1;
+    margin: 2vh;
+    font-size: 5vh;
+    text-align: center;
+    border-right: 0.1vh solid rgb(236, 235, 235) ;
+    background: grey
+}
+.six{
+    height:30vh;
+    margin-bottom: 1vh;
+}
+.carousel2{
+    position: relative;
+    width: 100vw;
+    height:30vh;
+}
+.carousel2 img{
+    width:100vw;
+    height:30vh;
+    display: none;
+}
+.carousel2 img.active{
+    display: inline-block;
+}
+.six .prevBtn, .six .nextBtn{
+    float: left;
+    margin-top: -15vh;
+    cursor: pointer;
+    position: absolute;
+}
+.six .prevBtn{
+    position: relative;
+    margin-left: 5vw;
+    z-index: 100;
+}
+.six .nextBtn{
+    position: relative;
+    margin-left: 90vw;
+    z-index: 100;
+}
+.seven{
+    height: 40vh;
+    display:flex;
+    margin: 2vh;
+}
+.seven .left{
+    flex:1;
+    height: inherit;
+    margin-right: 2vh;
+    background: linear-gradient(to right,rgb(255, 255, 255),rgb(250, 249, 249), rgb(245, 240, 240),rgb(236, 235, 235),rgb(18,121,60), rgb(18,126,54));
+}
+.seven .right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    font-size: 5vh;
+    text-align: center;
+}
+.seven ul{
+    list-style-type:square;   
+}
+.seven ul li{
+    display:list-item;
+    height: auto;
+}
+
+.seven .right a{
+    flex: 1;
+    text-decoration: none;
+    background-color: orange;
+    width: inherit;
+    margin: 1vh;
+    border-radius: 1vh;
+    color: black;
+    padding-top: 1vh;  
+}
+.nine{
+    height:10vh;
+    background-color:grey
+}
+.nine .right{
+    float:right;
+}
+.nine .left{
+    float:left;
+}
+
+
+
+
+

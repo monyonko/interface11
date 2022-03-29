@@ -1,0 +1,29 @@
+.thirdheader{
+    height:20vh;
+    width:inherit;
+    font-size: 3vh;
+}
+.thirdheader .logo{
+    float: left;
+    height: inherit;
+}
+.thirdheader .navbar{
+    float: left;
+    margin-left: 3vh;
+    height: 20vh;
+    position: relative;
+    
+}
+.thirdheader .navbar .navigation{
+    position: absolute;
+    top:10vh;
+    width: 90vw;
+}
+.thirdheader .navbar a{
+    text-transform: uppercase;
+    margin-right: 1vh;
+    
+}
+.thirdheader .navbar i{
+    margin-right: 2vh;
+}

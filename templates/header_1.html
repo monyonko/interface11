@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+
+{%block title%}
+    First Section
+{%endblock%}
+
+{%block content%}
+<div class="first">
+    <div class="logo">
+        <h3>LOGO</h3>
+        <p>Company's <br> Name</p>
+    </div>
+    
+    <div class="navIcons">
+        <div class="searchbar"> 
+            <span class="category">
+                <input class="cat"type="text">
+                <!-- javascript can make it an autocomplete field -->
+                <i class="fa fa-caret-down"></i>
+                <ul style="display:none; list-style: none;">
+                    <li>All</li>
+                    <li>sth</li>
+                    <li>sth</li>
+                    <li>sth</li>
+                    <li>sth</li>
+                </ul>
+            </span>
+            <input type="search" class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="others">
+            <a href=""><i class="fa fa-bell" aria-hidden="true"></i></a>
+            <a href=""><i class="fas fa-heart"></i></a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>   
+    </div>
+</div>
+
+{%endblock%}
+

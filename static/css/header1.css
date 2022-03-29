@@ -1,0 +1,60 @@
+.first{
+    height:20vh;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 1vh;
+}
+.first .logo{
+    height:12vh;
+    width:10vw;
+    margin: auto;
+}
+.logo h3{
+    border: 0.5vh solid black;
+    padding-top: 3vh;
+}
+
+.searchbar{
+    float:left;
+    position: absolute;  
+}
+.category{
+    border-right: 1vh;
+    width:10vw;
+    margin-right: 0;
+}
+.category input{
+    width:5vw;
+    height:5vh;
+    position: relative;
+    border-radius: 0.5vh 0 0 0.5vh;
+}
+.category .fa{
+    position:absolute;
+    top:2vh;
+    left: 4vw;
+}
+.searchbar .search{
+    width:70vw;
+    height:5vh;
+    border-radius: 0 0.5vh 0.5vh 0;
+    border-left:none;
+    margin-left: -1vh;
+    position: relative;
+    outline: none;
+}
+.searchbar .fa-search{
+    font-size: 3.5vh;
+    position:absolute ;
+    right:0.5vw;
+    top:1vh
+}
+.others{
+    float:right;
+    font-size: 4vh;
+}
+.others a{
+    margin-right:3vh;
+}
+
+

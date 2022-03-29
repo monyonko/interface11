@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/header1.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/header2.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/header3.css')}}">
+    <title>{%block title%}{%endblock%}</title>
+    
+</head>
+<body>
+    <div class="container">
+        {%block content%}{%endblock%}
+        <div class="slideshow">
+            
+            <div class="slider1">
+                <img src="../static/img/book.PNG" alt="">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="../static/img/book.PNG" alt="">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="" alt="1">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="" alt="2">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="../static/img/book.PNG" alt="">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="../static/img/book.PNG" alt="">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="../static/img/book.PNG" alt="">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <div class="slider1">
+                <img src="../static/img/book.PNG" alt="">
+                <p class="details" >
+                    <a href="">Name of the book</a><br>
+                    <span>Price</span>
+                </p>
+            </div>
+            <a class="prev" onclick="prev()">&#10094;</a>
+            <a class="next" onclick="next()">&#10095;</a>
+                
+        </div>  
+                
+        </div>
+        <div class="four">
+            <h3>Highly Rated</h3>
+            <div class="encloseFour">
+                <div class="highlyRated">
+                    <img class="" src="../static/img/book.PNG" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="highlyRated">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="afterFour">
+            <h2>Book of the Month</h2>
+            <div class="book ">
+                <img class="zoom" src="" alt=""><br>
+                <a href="">Name</a>
+                <p class="bookOfTheMonthDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, nulla sapiente quasi, natus temporibus consectetur fugiat perspiciatis distinctio fugit repudiandae ipsum aliquid unde dolores voluptas quod ab sit velit nam.
+                    Id neque hic consequuntur saepe! Ipsam quas perspiciatis dignissimos magni temporibus eveniet quis consequuntur voluptate, ab hic possimus voluptatum, inventore in voluptatibus ipsum obcaecati! Dicta in temporibus voluptas magnam rerum.</p>
+            </div>
+        </div>
+        <div class="encloseFiction">
+            <h2 style="color:white">Fiction</h2>
+            <div class="fiction">
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+    
+            </div>
+
+        </div>
+        <div class="encloseSelfHelp">
+            <h2> Self Help</h2>
+            <div class="selfHelp">
+                <div class="anchor zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="side">
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                    <div class="fictionBook zoom">
+                        <img src="" alt="">
+                        <p class="info">
+                            <a href="">Title</a>
+                            <button class="addToCart">BUY</button>
+                            <p class="price">1000</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="encloseJournals">
+            <h2>Journals</h2>
+            <div class="journals">
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+                <div class="fictionBook zoom">
+                    <img src="" alt="">
+                    <p class="info">
+                        <a href="">Title</a>
+                        <button class="addToCart">BUY</button>
+                        <p class="price">1000</p>
+                    </p>
+                </div>
+    
+            </div>
+
+        </div>
+       <div class="encloseCurriculum">
+        <h2>Curriculum Books</h2>
+        <div class="curriculumBooks">
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+            <div class="curriculum"></div>
+        </div>
+    </div>
+        <div class="otherAccesories">
+            <h2>Accessories</h2>
+            <div class="accessorize">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+                <img src="../static/img/footerPaypal.PNG" alt="">
+
+            </div>
+        </div>
+        
+        <div class="five">
+            <div class="one">
+                <p>Blog</p>
+            </div>
+            <div class="two">
+                <p>Calendars</p>
+            </div>
+            <div class="three">
+                <p>Publication</p>
+            </div>
+        </div>
+        <div class="six">
+            <!-- Carousel showing different images-->          
+            <div class=" carousel2" >
+                <img class="slide active" src="../static/img/bitcoin1.PNG" alt="">
+                <img class="slide" src="../static/img/bitcoin2.PNG" alt="">
+                <img class="slide" src="../static/img/bitcoin3.PNG" alt="">
+                <img class="slide" src="../static/img/bitcoin1.PNG" alt="">
+                <img class="slide" src="../static/img/bitcoin2.PNG" alt="">
+            </div>
+            <a class="prevBtn" >&#10094;</a> 
+            <a class="nextBtn" >&#10095;</a>
+        </div>
+        
+        
+        <div class="floatingButton">
+            
+        </div>
+        
+        <div class="nine">
+            <p class="left" style="font-weight: bold;">cc</p>
+            <div class="right">
+                <p style="font-weight: bold;">Join our mailing team</p><br>
+                <label for="">Email : </label>
+                <input type="text">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="floating-button">
+            <div class="float">
+                <a href="" class="item" title="ebk@twitter.com" ><i class="fa-brands fa-twitter" ></i></a>
+                <a href="" class="item" title="ebk@instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="item" title="ebk@linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" class="item" title="ebk@facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="item" title="ebk@youtube.com"><i class="fa-brands fa-youtube"></i></a>    
+            </div>
+
+        </div>
+            
+
+    </div>
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="jquery-1.4.2.min.js"><\/script>')</script>
+    <script src="../static/js/second.js"></script>
+     
+ 
+    
+</body>
+</html>
+
